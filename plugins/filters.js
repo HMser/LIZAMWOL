@@ -55,17 +55,17 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
         if (!!message.mention && message.mention[0] == '918921483992@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./media/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
+await message.client.sendMessage(message.jid, fs.readFileSync('./Media/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         }
         if (!!message.mention && message.mention[0] == Config.MENTION) {
-await message.client.sendMessage(message.jid, fs.readFileSync('./media/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
+await message.client.sendMessage(message.jid, fs.readFileSync('./Media/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         }
         
 const array = ['3g','Aah','Acting','Admin','Aliya','Aliyo','Ano','Anoo','Appan','Ariyo','Atheppo','Ayn','Baby','Bgm','Birthday','Blind psycho','Boss','Bot Remove','Bot','Business','Bye','Chaya','Chill','Chiri','Class','Cruz','Cruze','Dance','Dora','Dream','Edit','Eppadi','Eppol','Error','Ethi','FF','Free Fire','Good Night','Hai','Hambada','Happy','Hate','Hi','Hloo','How','Hy','I Love You','I love you','Kick','Kiss','Kopp','Kundan','Line','Love You','Love you','Love','Lub','Manassilayilla','Mandan','Mazha','Mikhaiel','Mindanda','Mindula','Miss You','Miss u','Mood','Mooji','Morning','Mrng','Mullassery','Music','Mute','Muthe','Muthee','Mwol','NEW','Nanban','Nee Poda','New','Neymar','Njan Vannu','Ntha Ingane','Offer','Online','Oorma','Oru pattu pad','Paisa','Pediya','Poda','Pokki Para','Poli','Porn','Pottan','Pottum','Pova','Povano','Powli','Pro','Recharge','Remove','Ringtone','Rip','S','Samshayam','Sarasu','Sathyam','Save','Scene','Sex','Share','Sheri','Sherikkum','Shine','Single','Smoker','Smooth','Sorry','Spam','Sry',Stop','Subscribe','Super','Tea','Tentacion','Tha','Thank U','Thanks','Tharuo','Thech','Theram','Thund','Top Up','Umma','Vannu','Vedi','Welcome','Wow','XXX','Yes','Ys','Achan'','Liza','3g','aah','acting','admin','aliya','aliyo','ano','anoo','appan','ariyo','atheppo','ayn','baby','bgm','birthday','blind psycho','boss','bot remove','bot','business','bye','chaya','chill','chiri','class','cruz','cruze','dance','dora','dream','edit','eppadi','eppol','error','ethi','ff','free fire','good night','hai','hambada','happy','hate','hi','hloo','how','hy','i love you','i love you','kick','kiss','kopp','kundan','line','love you','love you','love','lub','manassilayilla','mandan','mazha','mikhaiel','mindanda','mindula','miss you','miss u','mood','mooji','morning','mrng','mullassery','music','mute','muthe','muthee','mwol','new','nanban','nee poda','new','neymar','njan vannu','ntha ingane','offer','online','oorma','oru pattu pad','paisa','pediya','poda','pokki para','poli','porn','pottan','pottum','pova','povano','powli','pro','recharge','remove','ringtone','rip','s','samshayam','sarasu','sathyam','save','scene','sex','share','sheri','sherikkum','shine','single','smoker','smooth','sorry','spam','sry',stop','subscribe','super','tea','tentacion','tha','thank u','thanks','tharuo','thech','theram','thund','top up','umma','vannu','vedi','welcome','wow','xxx','yes','ys','achan'','liza']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
-       await message.client.sendMessage(message.jid, fs.readFileSync('./media/uploads/' + a + '.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.MWOL, quoted: message.data, ptt: true})
+       await message.client.sendMessage(message.jid, fs.readFileSync('./Media/uploads/' + a + '.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.MWOL, quoted: message.data, ptt: true})
 }
 });
     }
