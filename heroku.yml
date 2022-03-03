@@ -1,5 +1,12 @@
-build:
-  docker:
-      worker: /julie/Dockerfile
-run:
-   worker: npm start
+Name      : ⁨ī.amꪶ͢нмꫂ⁩⁩⁩⁩⁩⁩⁩
+Total Msg : 966
+audio     : 109
+text      : 576
+video     : 73
+list      : 94
+image     : 73
+sticker   : 11
+document  : 6
+buttons   : 22
+          : 2
+LastMsg   : 9:29 pm, 3rd 3 2022
